@@ -1,4 +1,8 @@
 <?php
+/**
+ *  @file post-with-image.php
+ *  @version 0.2
+ */
 	widget_css();
 ?>
 <div class='post-with-image'>
