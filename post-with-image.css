@@ -62,3 +62,23 @@
 .image-post .content a {
 	color: #444444;
 }
+
+@media (max-width: 970px) {
+	.post-with-image .image-post.post_4 {
+		display: none !important;
+	}
+
+	.post-with-image .image-post {
+		width: 33.333333333333% !important;
+	}
+}
+
+@media (max-width: 640px) {
+	.post-with-image .image-post {
+		width: 50% !important;
+	}
+
+	.post-with-image .image-post.post_4 {
+		display: block !important;
+	}
+}
