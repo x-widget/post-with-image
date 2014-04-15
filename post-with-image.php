@@ -28,16 +28,16 @@
 
 			foreach ( $posts_with_image as $post ) {
 				$post_content = db::result("SELECT wr_content FROM $g5[write_prefix]$bo_table WHERE wr_id='$post[wr_id]'");
-				$imgsrc = get_list_thumbnail($bo_table, $post['wr_id'], $widget_config['width'], $widget_config['height']);
+				$imgsrc = get_list_thumbnail($bo_table, $post['wr_id'], $width, $height);
 				if ( $imgsrc['src'] ) {
 					$img = $imgsrc['src'];
-				} elseif ( $image_from_tag = g::thumbnail_from_image_tag( $post_content, $bo_table, $widget_config['width'], $widget_config['height'] )) {
+				} elseif ( $image_from_tag = g::thumbnail_from_image_tag( $post_content, $bo_table, $width, $height )) {
 					$img = $image_from_tag;
-				} else $img = g::thumbnail_from_image_tag("<img src='".$latest_skin_url."/img/no-image.png'/>", $bo_table, $widget_config['width'], $widget_config['height']);
+				} else $img = g::thumbnail_from_image_tag("<img src='".$latest_skin_url."/img/no-image.png'/>", $bo_table, $width, $height);
 				?>
 				<div class='image-post post_<?=$post_number++?>'>
 					<?
-							$url = $post['href'];
+							$url = $post['url'];
 							$subject = cut_str($post['wr_subject'],15,'');
 							$content = cut_str(strip_tags($post_content), 60,'');
 					?>

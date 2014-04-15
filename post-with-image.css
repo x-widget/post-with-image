@@ -71,9 +71,31 @@
 	.post-with-image .image-post {
 		width: 33.333333333333% !important;
 	}
+	
+	.post-full-image-container span.image-menu-name {
+		width: 16.6666666667%;
+	}
+	
+}
+
+
+@media ( max-width: 845px) {
+	.post-full-image-container span.image-menu-name {
+		width: 20%;
+	}
+}
+
+@media ( max-width: 720px) {
+	.post-full-image-container span.image-menu-name {
+		width: 25%;
+	}
 }
 
 @media (max-width: 640px) {
+	.post-full-image-container span.image-menu-name {
+		width: 33.33%;
+	}
+	
 	.post-with-image .image-post {
 		width: 50% !important;
 	}
@@ -81,4 +103,13 @@
 	.post-with-image .image-post.post_4 {
 		display: block !important;
 	}
+	
+	.post-with-image .image-post {
+		width: 50%;
+	}	
+
+	.post-with-image .image-post.post_info {
+		display: block;
+	}
+
 }
