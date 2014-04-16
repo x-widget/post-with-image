@@ -33,11 +33,11 @@
 					$img = $imgsrc['src'];
 				} elseif ( $image_from_tag = g::thumbnail_from_image_tag( $post_content, $bo_table, $width, $height )) {
 					$img = $image_from_tag;
-				} else $img = g::thumbnail_from_image_tag("<img src='".$latest_skin_url."/img/no-image.png'/>", $bo_table, $width, $height);
+				} else $img = g::thumbnail_from_image_tag("<img src='".x::url()."/widget/$widget_config[name]/no-image.png'/>", $bo_table, $width, $height);
 				?>
 				<div class='image-post post_<?=$post_number++?>'>
 					<?
-							$url = $post['url'];
+							$url = g::url()."/bbs/board.php?bo_table=$bo_table&wr_id=$post[wr_id]";
 							$subject = cut_str($post['wr_subject'],15,'');
 							$content = cut_str(strip_tags($post_content), 60,'');
 					?>
