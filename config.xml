@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 <config>
+	<id>post-with-image</id>
+	<type>widget</type>
 	<category>
 		<main>post</main>
 		<sub>latest</sub>
