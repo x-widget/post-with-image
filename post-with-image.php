@@ -40,7 +40,7 @@
 							$url = g::url()."/bbs/board.php?bo_table=$bo_table&wr_id=$post[wr_id]";
 							$subject = cut_str($post['wr_subject'],15,'');
 							$content = cut_str(strip_tags($post_content), 60,'');
-					?>
+					?> 
 					
 					<div class='inner'>
 						<div class='forum-name-wrapper'><div class='forum-name'><?=$board_subject?></div></div>
