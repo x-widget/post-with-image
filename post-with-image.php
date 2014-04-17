@@ -61,9 +61,9 @@
 				<?}?>
 					
 			<?
-				} else {
-					echo "No data";
-				}
-			?>
+				} else { ?>
+					<div class='title'><a href="<?=g::url()?>/bbs/write.php?bo_table=<?=$bo_table?>">NO POST CLICK HERE TO CREATE ONE</a></div>
+					<img src="<?=x::url()?>/widget/<?=$widget_config['name']?>/no-post.jpg"/>
+					<?}?>
 	</div>
 </div>
