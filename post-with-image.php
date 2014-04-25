@@ -67,3 +67,11 @@
 					<?}?>
 	</div>
 </div>
+
+<? if ( etc::old_ie() ) { ?>
+	<style>
+		.image-post {	
+			width: 24.99%;
+		}
+	</style>
+<? } ?>
